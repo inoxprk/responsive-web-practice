@@ -10,35 +10,6 @@
 #wrap section {
   box-sizing: border-box;
 }
-
-/* 서브 헤더 영역 */
-.sub_header_section {
-  order: 3;
-  padding: 48px 0;
-  text-align: center;
-  background: #219af7;
-
-}
-
-.sub_header_section h2 {
-  color: #fff;
-  margin-bottom: 12px;
-  font-size: 1.313rem;
-}
-
-.breadcrum_list li {
-  display: inline;
-  font-size: .0.813rem;
-  font-weight: bold;
-}
-
-/* 콘텐츠 영역 */
-.content_section {
-  order: 4;
-  padding: 20px;
-  background: #fff;
-}
-
 /* 헤더 */
 .info_section {
   order: 1;
@@ -85,7 +56,9 @@
   order: 2;
   width: 100%;
 }
-
+.gnb {
+  display: none;
+}
 .gnb li {
   display: flex;
   background: #2c3e50;
@@ -117,6 +90,34 @@
   text-indent: -9999px;
   background: url("../images/s_images/menu_toggle_btn.png") no-repeat;
   cursor: pointer;
+}
+
+/* 서브 헤더 영역 */
+.sub_header_section {
+  order: 3;
+  padding: 48px 0;
+  text-align: center;
+  background: #219af7;
+
+}
+
+.sub_header_section h2 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 1.313rem;
+}
+
+.breadcrum_list li {
+  display: inline;
+  font-size: .0.813rem;
+  font-weight: bold;
+}
+
+/* 콘텐츠 영역 */
+.content_section {
+  order: 4;
+  padding: 20px;
+  background: #fff;
 }
 
 /* 하단 검색 영역 */
