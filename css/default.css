@@ -1,0 +1,355 @@
+/* 모바일용 CSS */
+.slider_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 3;
+  width: 100%;
+  height: 300px;
+  background: url("../images/p_images/slider_01.jpg") center no-repeat;
+}
+
+.slider_section span {
+  width: 34px;
+  height: 39px;
+  text-indent: -9999px;
+  background: url("../images/s_images/slider_arrow.png") no-repeat;
+  cursor: pointer;
+}
+
+span.prev_btn {
+  margin-left: -10px;
+  background-position: 0 0;
+}
+
+span.next_btn {
+  margin-right: -10px;
+  background-position: -34px 0;
+}
+
+.latest_post_section {
+  order: 4;
+  background: #ffc40f;
+  text-shadow: 0px 1px 1px #b98e0b;
+}
+
+.popular_post_section {
+  order: 5;
+  background: #a660c2;
+  text-shadow: 0px 1px 1px #714185;
+}
+
+.latest_post_section,
+.popular_post_section {
+  padding: 40px 12.5%;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 1.188rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.latest_post_section li,
+.popular_post_section li {
+  margin-top: 15px;
+  padding-left: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url("../images/s_images/post_circle_icon.png") left center no-repeat;
+}
+
+.latest_post_section li:first-child,
+.popular_post_section li:first-child {
+  margin-top: 0;
+}
+
+.gallery_section {
+  order: 6;
+  padding: 50px 12.5%;
+  text-align: center;
+  background: #e65d5d;
+  text-shadow: 0px 1px 1px #c43434;
+  ;
+}
+
+.gallery_section img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px #c43434;
+}
+
+.gallery_list li:nth-child(2) {
+  margin-top: 30px;
+}
+
+.gallery_list li figcaption {
+  margin-top: 20px;
+  font-size: 1.188rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rankup_section {
+  order: 7;
+  padding: 40px 12.5%;
+  background: #219af7;
+  text-shadow: 0px 1px 1px #1974ba;
+}
+
+.rankup_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rankup_list li {
+  width: 47.91%;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rankup_list li:first-child,
+.rankup_list li:nth-child(2) {
+  margin-top: 0;
+}
+
+.rankup_list li a {
+  display: block;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.banner_section {
+  order: 8;
+}
+
+.banner_box_01 {
+  background: #e6567a;
+}
+
+.banner_box_01 a {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.banner_box_02 {
+  background: #c44968;
+}
+
+.banner_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 12.5%;
+}
+
+.social_section {
+  order: 9;
+  padding: 24px 12.8%;
+  background: #fff;
+}
+
+.social_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+  #wrap {
+    flex-flow: row wrap;
+  }
+
+  .slider_section {
+    width: 59.895%;
+    height: auto;
+  }
+
+  .slider_section span {
+    position: relative;
+    z-index: 10;
+  }
+
+  .latest_post_section {
+    order: 5;
+  }
+
+  .popular_post_section {
+    order: 6;
+  }
+
+  .latest_post_section,
+  .popular_post_section {
+    width: 41.66%;
+    padding-left: 5.208%;
+    padding-right: 5.208%;
+  }
+
+  .gallery_section {
+    order: 8;
+    width: 71.3541%;
+    padding-left: 5.208%;
+    padding-right: 5.208%;
+  }
+
+  .gallery_list {
+    display: flex;
+  }
+
+  .gallery_list li {
+    width: 47%;
+  }
+
+  .gallery_list li:nth-child(2) {
+    margin-left: 5.98%;
+    margin-top: 0;
+  }
+
+  .rankup_section {
+    order: 4;
+    width: 40.1%;
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+  }
+
+  .banner_section {
+    display: flex;
+    order: 9;
+    flex-direction: column;
+    width: 28.6%;
+  }
+
+  .banner_section div {
+    flex: 1 1 0;
+  }
+
+  .banner_box_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_box_01 a {
+    display: inline;
+    padding: 0;
+  }
+
+  .banner_box_02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_list {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .banner_list li:nth-child(2) {
+    margin: 0 14px;
+  }
+
+  .social_section {
+    display: flex;
+    order: 7;
+    justify-content: center;
+    align-items: center;
+    width: 16.683%;
+    padding: 0;
+  }
+
+  .social_list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .social_list li:nth-child(2) {
+    margin: 24px 0;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width:960px) {
+  .slider_section {
+    order: 2;
+    width: 50%;
+  }
+
+  .latest_post_section,
+  .popular_post_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .gallery_section {
+    order: 3;
+    width: 27.08%;
+  }
+
+  .gallery_list {
+    display: block;
+  }
+
+  .gallery_list li {
+    width: auto;
+  }
+
+  .gallery_list li:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .rankup_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22.9%;
+    padding: 0;
+  }
+
+  .rankup_list {
+    display: block;
+  }
+
+  .rankup_list li {
+    width: auto;
+    text-align: left;
+    counter-increment: rankup-counter;
+  }
+
+  .rankup_list li:nth-child(2) {
+    margin-top: 15px;
+  }
+
+  .rankup_list li:before {
+    padding-right: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 1px 1px #428e9e;
+    content: counter(rankup-counter);
+  }
+
+  .rankup_list li a {
+    display: inline;
+    padding: 0;
+    border: 0;
+  }
+
+  .banner_section {
+    order: 7;
+    width: 22.9%;
+  }
+}
